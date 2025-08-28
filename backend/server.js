@@ -54,7 +54,6 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import cookieParser from "cookie-parser";
 import { v2 as cloudinary } from "cloudinary";
 
 import authRoutes from "./routes/auth.route.js";
