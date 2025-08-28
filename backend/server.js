@@ -64,7 +64,7 @@ import notificationRoutes from "./routes/notification.route.js";
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://your-frontend.netlify.app"], 
+  origin: ["http://localhost:5173", "https://remarkable-bavarois-fd8860.netlify.app"], 
   credentials: true,
 }));
 app.use(express.json());
