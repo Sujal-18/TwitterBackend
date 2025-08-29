@@ -4,10 +4,10 @@ import jwt from "jsonwebtoken";
 export const protectRoute = async (req, res, next) => {
 	try {
 		const token = req.cookies.jwt;
+		console.log("JWT in cookies:", token);
 		if (!token) {
 			return res.status(401).json({ error: "Unauthorized: No Token Provided" });
 		}
-
 		const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
 		if (!decoded) {
